@@ -1,7 +1,7 @@
 import Herowave from "@/images/svg/heroWave";
 import { Button } from "@heroui/button";
-import Image from "next/image";
 import About from "./about/page";
+import Projects from "./projects/page";
 
 const Skills = [
   "HTML",
@@ -47,6 +47,7 @@ export default function Home() {
 
       {/* About section */}
       <About />
+      <Projects />
     </>
   );
 }

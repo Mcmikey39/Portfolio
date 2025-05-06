@@ -5,6 +5,7 @@
       "name": "next-app-template",
       "dependencies": {
         "@heroui/button": "2.2.19",
+        "@heroui/card": "^2.2.18",
         "@heroui/code": "2.2.14",
         "@heroui/input": "2.4.19",
         "@heroui/kbd": "2.2.15",
@@ -49,7 +50,8 @@
         "eslint-plugin-unused-imports": "4.1.4",
         "globals": "16.0.0",
         "postcss": "8.5.3",
-        "prettier": "3.5.3",
+        "prettier": "^3.5.3",
+        "prettier-plugin-tailwindcss": "^0.6.11",
         "tailwind-variants": "0.3.0",
         "tailwindcss": "3.4.16",
         "typescript": "5.6.3",
@@ -100,6 +102,8 @@
     "@heroui/aria-utils": ["@heroui/aria-utils@2.2.16", "", { "dependencies": { "@heroui/react-rsc-utils": "2.1.7", "@heroui/shared-utils": "2.1.9", "@heroui/system": "2.4.15", "@react-aria/utils": "3.28.2", "@react-stately/collections": "3.12.3", "@react-stately/overlays": "3.6.15", "@react-types/overlays": "3.8.14", "@react-types/shared": "3.29.0" }, "peerDependencies": { "react": ">=18 || >=19.0.0-rc.0", "react-dom": ">=18 || >=19.0.0-rc.0" } }, "sha512-d4MuOSpn95RgxJloLc9mDfo162Z0/YtErr6CgXbIWNQfZL8AfBxUMCuhYS1KCUwBV6usitMf2XIW4zGEGtMkXA=="],
 
     "@heroui/button": ["@heroui/button@2.2.19", "", { "dependencies": { "@heroui/react-utils": "2.1.10", "@heroui/ripple": "2.2.14", "@heroui/shared-utils": "2.1.9", "@heroui/spinner": "2.2.16", "@heroui/use-aria-button": "2.2.13", "@react-aria/button": "3.13.0", "@react-aria/focus": "3.20.2", "@react-aria/interactions": "3.25.0", "@react-aria/utils": "3.28.2", "@react-types/button": "3.12.0", "@react-types/shared": "3.29.0" }, "peerDependencies": { "@heroui/system": ">=2.4.7", "@heroui/theme": ">=2.4.6", "framer-motion": ">=11.5.6 || >=12.0.0-alpha.1", "react": ">=18 || >=19.0.0-rc.0", "react-dom": ">=18 || >=19.0.0-rc.0" } }, "sha512-9vpTYyGzadcLa2Toy1K0Aoa6hno2kH5S+Sc9Ruliim0MdoqXtdsD2i1Ywpgf2xp6bD6bTHsfb1uuspAYJRdxJA=="],
+
+    "@heroui/card": ["@heroui/card@2.2.18", "", { "dependencies": { "@heroui/react-utils": "2.1.10", "@heroui/ripple": "2.2.14", "@heroui/shared-utils": "2.1.9", "@heroui/use-aria-button": "2.2.13", "@react-aria/button": "3.13.0", "@react-aria/focus": "3.20.2", "@react-aria/interactions": "3.25.0", "@react-aria/utils": "3.28.2", "@react-types/shared": "3.29.0" }, "peerDependencies": { "@heroui/system": ">=2.4.7", "@heroui/theme": ">=2.4.6", "framer-motion": ">=11.5.6 || >=12.0.0-alpha.1", "react": ">=18 || >=19.0.0-rc.0", "react-dom": ">=18 || >=19.0.0-rc.0" } }, "sha512-fgvOfmeEz3ri9ft2P45ycclsC0AeJxQnZey2JuF6G8ou7IOKYEO0najuW6PDs9h50tY5TLWl1fU5S7WMUzjEpw=="],
 
     "@heroui/code": ["@heroui/code@2.2.14", "", { "dependencies": { "@heroui/react-utils": "2.1.10", "@heroui/shared-utils": "2.1.9", "@heroui/system-rsc": "2.3.13" }, "peerDependencies": { "@heroui/theme": ">=2.4.6", "react": ">=18 || >=19.0.0-rc.0", "react-dom": ">=18 || >=19.0.0-rc.0" } }, "sha512-mFHgSXi1XzP+B59QBpWk/6NOc2A8wToPWDEaPOJO65nNUZ0S7FHhZTUNVPxHRn3wy8RPclPUpLFicGggT5inQw=="],
 
@@ -908,6 +912,8 @@
     "prettier": ["prettier@3.5.3", "", { "bin": { "prettier": "bin/prettier.cjs" } }, "sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw=="],
 
     "prettier-linter-helpers": ["prettier-linter-helpers@1.0.0", "", { "dependencies": { "fast-diff": "^1.1.2" } }, "sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w=="],
+
+    "prettier-plugin-tailwindcss": ["prettier-plugin-tailwindcss@0.6.11", "", { "peerDependencies": { "@ianvs/prettier-plugin-sort-imports": "*", "@prettier/plugin-pug": "*", "@shopify/prettier-plugin-liquid": "*", "@trivago/prettier-plugin-sort-imports": "*", "@zackad/prettier-plugin-twig": "*", "prettier": "^3.0", "prettier-plugin-astro": "*", "prettier-plugin-css-order": "*", "prettier-plugin-import-sort": "*", "prettier-plugin-jsdoc": "*", "prettier-plugin-marko": "*", "prettier-plugin-multiline-arrays": "*", "prettier-plugin-organize-attributes": "*", "prettier-plugin-organize-imports": "*", "prettier-plugin-sort-imports": "*", "prettier-plugin-style-order": "*", "prettier-plugin-svelte": "*" }, "optionalPeers": ["@ianvs/prettier-plugin-sort-imports", "@prettier/plugin-pug", "@shopify/prettier-plugin-liquid", "@trivago/prettier-plugin-sort-imports", "@zackad/prettier-plugin-twig", "prettier-plugin-astro", "prettier-plugin-css-order", "prettier-plugin-import-sort", "prettier-plugin-jsdoc", "prettier-plugin-marko", "prettier-plugin-multiline-arrays", "prettier-plugin-organize-attributes", "prettier-plugin-organize-imports", "prettier-plugin-sort-imports", "prettier-plugin-style-order", "prettier-plugin-svelte"] }, "sha512-YxaYSIvZPAqhrrEpRtonnrXdghZg1irNg4qrjboCXrpybLWVs55cW2N3juhspVJiO0JBvYJT8SYsJpc8OQSnsA=="],
 
     "prop-types": ["prop-types@15.8.1", "", { "dependencies": { "loose-envify": "^1.4.0", "object-assign": "^4.1.1", "react-is": "^16.13.1" } }, "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg=="],
 

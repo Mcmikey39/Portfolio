@@ -16,7 +16,7 @@ const cardItems = [
     name: "Melolife",
     href: "https://melolife-mcmikey39s-projects.vercel.app/",
     subscription: "Nextjs, Typescript, Tailwind, Heroui",
-    src: "/images/melolife.png",
+    src: "/",
     txt: "See Project",
   },
   {

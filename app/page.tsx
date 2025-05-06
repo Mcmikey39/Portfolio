@@ -2,26 +2,14 @@ import Herowave from "@/images/svg/heroWave";
 import { Button } from "@heroui/button";
 import About from "./about/page";
 import Projects from "./projects/page";
-
-const Skills = [
-  "HTML",
-  "CSS / SASS",
-  "JavaScript",
-  "TypeScript",
-  "Python",
-  "React",
-  "Next.js",
-  "Django",
-  "PostgreSQL",
-  "Figma",
-];
+import Contact from "./contact/page";
 
 export default function Home() {
   return (
     <>
       {/* Hero section */}
-      <section className="bg-gradient-to-b from-slate-800 to-black text-slate-50">
-        <div className="container mx-auto flex min-h-[58rem] justify-center">
+      <section className="bg-gradient-to-b from-slate-800 to-black pt-48 text-slate-50 md:pt-60 lg:pt-72">
+        <div className="container mx-auto flex justify-center px-4">
           <div className="flex flex-col justify-center space-y-6 text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
               Full-Stack Web Developer
@@ -42,12 +30,21 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Herowave />
+        <div className="pt-36">
+          <Herowave />
+        </div>
       </section>
 
-      {/* About section */}
       <About />
       <Projects />
+      <Contact />
+
+      <footer className="bg-slate-900 text-slate-50">
+        <div className="container mx-auto flex min-h-[10rem] flex-col items-center justify-center">
+          {" "}
+          footer
+        </div>
+      </footer>
     </>
   );
 }

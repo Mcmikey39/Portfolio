@@ -54,7 +54,7 @@ export default function Cards() {
               height={150}
             />
             <Button
-              className="bg-slate-900 text-slate-50"
+              className="bg-indigo-500 text-slate-50"
               color="default"
               radius="lg"
               size="lg"

@@ -74,7 +74,7 @@ export default function Forum() {
         ></Textarea>
 
         <div className="mx-auto flex">
-          <Button color="primary" type="submit" className="w-40">
+          <Button type="submit" className="w-40 bg-indigo-500">
             Submit
           </Button>
         </div>

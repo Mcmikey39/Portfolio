@@ -53,7 +53,12 @@ export default function Navbar() {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} href="#contact" variant="flat">
+          <Button
+            as={Link}
+            href="#contact"
+            variant="flat"
+            className="bg-indigo-500 text-slate-50"
+          >
             Contact
           </Button>
         </NavbarItem>

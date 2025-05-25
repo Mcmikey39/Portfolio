@@ -3,6 +3,7 @@ import { Button } from "@heroui/button";
 import About from "./about/page";
 import Projects from "./projects/page";
 import Contact from "./contact/page";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,15 +19,15 @@ export default function Home() {
               Enthusiastic about programming and always seeking to learn more.
             </p>
             <div className="space-x-6">
-              <Button size="lg" className="bg-indigo-500 shadow-lg">
-                Get in touch
-              </Button>
-              <Button
-                size="lg"
-                className="bg-slate-300 text-slate-900 shadow-lg"
-              >
-                Get in touch
-              </Button>
+              <Link href="#contact">
+                <Button
+                  href="#contact"
+                  size="lg"
+                  className="bg-indigo-500 shadow-lg"
+                >
+                  Get in touch
+                </Button>{" "}
+              </Link>
             </div>
           </div>
         </div>

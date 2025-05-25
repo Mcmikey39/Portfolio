@@ -1,5 +1,5 @@
 import Cards from "@/components/cards";
-import Herowave from "@/images/svg/heroWave";
+import Herowave from "@/app/public/images/svg/heroWave";
 
 export default function Projects() {
   return (

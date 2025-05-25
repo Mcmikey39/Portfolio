@@ -4,7 +4,10 @@ import Herowave from "@/images/svg/heroWave";
 export default function Projects() {
   return (
     <>
-      <section className="bg-gradient-to-b from-slate-900 to-slate-950 py-32 text-slate-50">
+      <section
+        id="projects"
+        className="bg-gradient-to-b from-slate-900 to-slate-950 py-32 text-slate-50"
+      >
         <div className="translate-y-180 rotate-180">
           <Herowave />
         </div>

@@ -6,3 +6,7 @@ h1,
 h2 {
   font-family: var(--font-iceberg);
 }
+
+html {
+  scroll-behavior: smooth;
+}

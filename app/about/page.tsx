@@ -15,7 +15,10 @@ const Skills = [
 
 export default function About() {
   return (
-    <section className="bg-gradient-to-b from-black to-slate-900 py-32 text-slate-50">
+    <section
+      id="about"
+      className="bg-gradient-to-b from-black to-slate-900 py-32 text-slate-50"
+    >
       <div className="flex justify-center md:my-20">
         <h2 className="text-4xl lg:text-5xl xl:text-6xl">About</h2>
       </div>

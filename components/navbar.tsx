@@ -14,8 +14,8 @@ import Link from "next/link";
 
 const menuItems: { title: string; href: string }[] = [
   { title: "Home", href: "#" },
-  { title: "About", href: "#" },
-  { title: "Projects", href: "#" },
+  { title: "About", href: "#about" },
+  { title: "Projects", href: "#projects" },
   { title: "Skills", href: "#" },
 ];
 
@@ -26,13 +26,13 @@ export default function Navbar() {
       isBordered
       position="sticky"
       maxWidth="2xl"
-      className="bg-transparent mx-auto fixed "
+      className="fixed mx-auto bg-transparent"
     >
       <NavbarContent className="sm:hidden">
         <NavbarMenuToggle />
       </NavbarContent>
 
-      <NavbarContent className="sm:flex hidden">
+      <NavbarContent className="hidden sm:flex">
         <NavbarBrand>
           <NavLogo />
           <p className="font-bold">MCB</p>
@@ -43,7 +43,7 @@ export default function Navbar() {
         <NavLogo />
       </NavbarBrand>
 
-      <NavbarContent justify="center" className="sm:flex hidden space-x-4">
+      <NavbarContent justify="center" className="hidden space-x-4 sm:flex">
         {menuItems.map((item, index) => (
           <NavbarItem key={`${item}-${index}`} className="hover:underline">
             <Link href={item.href}>{item.title}</Link>
@@ -53,7 +53,7 @@ export default function Navbar() {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} href="#" variant="flat">
+          <Button as={Link} href="#contact" variant="flat">
             Contact
           </Button>
         </NavbarItem>

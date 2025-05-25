@@ -3,7 +3,7 @@ import Forum from "@/components/forum";
 export default function Contact() {
   return (
     <>
-      <section className="bg-slate-950 py-32">
+      <section id="contact" className="bg-slate-950 py-32">
         <div className="container mx-auto">
           <span className="mx-8 flex h-4 rounded-lg border-t-1 bg-transparent"></span>
           <div className="my-20 flex justify-center">

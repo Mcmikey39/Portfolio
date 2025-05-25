@@ -8,7 +8,7 @@ import {
   NavbarItem,
 } from "@heroui/navbar";
 
-import NavLogo from "@/app/public/images/svg/navLogo";
+import NavLogo from "@/public/images/svg/navLogo";
 import { Button } from "@heroui/button";
 import Link from "next/link";
 

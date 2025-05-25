@@ -1,4 +1,4 @@
-import Herowave from "@/app/public/images/svg/heroWave";
+import Herowave from "@/public/images/svg/heroWave";
 import { Button } from "@heroui/button";
 import About from "./about/page";
 import Projects from "./projects/page";

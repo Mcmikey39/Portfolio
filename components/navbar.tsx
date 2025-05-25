@@ -15,8 +15,8 @@ import Link from "next/link";
 const menuItems: { title: string; href: string }[] = [
   { title: "Home", href: "#" },
   { title: "About", href: "#about" },
+  { title: "Skills", href: "#skills" },
   { title: "Projects", href: "#projects" },
-  { title: "Skills", href: "#" },
 ];
 
 export default function Navbar() {

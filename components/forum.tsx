@@ -38,11 +38,11 @@ export default function Forum() {
       >
         <Input
           isRequired
-          errorMessage="Please enter a valid First Name"
-          label="First Name"
+          errorMessage="Please enter a valid Name"
+          label="Name"
           labelPlacement="outside"
-          name="First Name"
-          placeholder="Enter your First Name"
+          name="Name"
+          placeholder="Enter your Name"
           type="text"
           variant="underlined"
         />
@@ -73,17 +73,14 @@ export default function Forum() {
           }}
         ></Textarea>
 
-        <div className="flex gap-4">
-          <Button color="primary" type="submit">
+        <div className="mx-auto flex">
+          <Button color="primary" type="submit" className="w-40">
             Submit
-          </Button>
-          <Button type="reset" variant="flat">
-            Reset
           </Button>
         </div>
 
         {action && (
-          <div className="text-center text-sm text-gray-500">{action}</div>
+          <div className="mx-auto flex text-sm text-gray-500">{action}</div>
         )}
       </Form>
     </>

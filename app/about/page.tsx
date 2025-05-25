@@ -34,7 +34,10 @@ export default function About() {
             />
           </div>
 
-          <div className="| space-y-4 px-8 text-center md:w-1/2 md:text-left">
+          <div
+            id="skills"
+            className="| space-y-4 px-8 text-center md:w-1/2 md:text-left"
+          >
             <h1 className="text-3xl font-bold">Hi, My name is Michael</h1>
             <div className="space-y-4">
               <p className="leading-relaxed text-gray-300">

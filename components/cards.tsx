@@ -4,20 +4,20 @@ import Image from "next/image";
 import { Button } from "@heroui/button";
 import { Card, CardHeader, CardBody } from "@heroui/card";
 
-
 const cardItems = [
   {
     name: "Internship Repo ( GITHUB )",
-    href: "https://github.com/Mcmikey39/School-stage/tree/main/stage",
+    href: "https://github.com/Mcmikey39/Stage-Internship-",
     subscription: "React, Pyhton, Django, Typescript, Tailwind",
-    src: "/",
+    src: "/images/companyOverview.png",
     txt: "See Github Repo",
   },
   {
     name: "Melolife",
     href: "https://melolife-mcmikey39s-projects.vercel.app/",
-    subscription: "Nextjs, Typescript, Tailwind, Heroui",
-    src: "/",
+    subscription:
+      "Nextjs, Typescript, Tailwind, Heroui, <br /> Updates comming soon",
+    src: "/images/melolife.png",
     txt: "See Project",
   },
   {
@@ -38,19 +38,20 @@ export default function Cards() {
           shadow="lg"
           className="bg-slate-800 py-8 text-slate-50"
         >
-          <CardHeader className="flex-col items-start px-4 pt-2">
+          <CardHeader className="items- flex-col">
             <p className="text-large font-bold uppercase">{item.name}</p>
-            <small className="italic text-default-500">
-              {item.subscription}
-            </small>
+            <small
+              className="text-center italic text-default-500"
+              dangerouslySetInnerHTML={{ __html: item.subscription }}
+            ></small>
           </CardHeader>
-          <CardBody className="gap-5 overflow-visible py-2">
+          <CardBody className="items-center justify-center gap-10 overflow-visible">
             <Image
-              alt="Under construction"
+              alt=" "
               className="rounded-lg object-cover"
               src={item.src}
               width={270}
-              height={175}
+              height={150}
             />
             <Button
               className="bg-slate-900 text-slate-50"

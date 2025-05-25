@@ -40,9 +40,11 @@ export default function Home() {
       <Contact />
 
       <footer className="bg-slate-900 text-slate-50">
-        <div className="container mx-auto flex min-h-[10rem] flex-col items-center justify-center">
+        <div className="container mx-auto flex min-h-[3rem] flex-col items-center justify-center">
           {" "}
-          footer
+          <span className="text-sm">
+            © {new Date().getFullYear()} Michael C. B. All rights reserved.
+          </span>
         </div>
       </footer>
     </>

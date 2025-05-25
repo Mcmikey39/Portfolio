@@ -15,7 +15,7 @@ const Herowave = () => {
   React.useEffect(() => {
     const interval = setInterval(() => {
       cycle();
-    }, 3000); // change every 3 seconds
+    }, 4000); // change every 3 seconds
     return () => clearInterval(interval);
   }, [cycle]);
 

@@ -12,7 +12,7 @@ export default function Contact() {
 
           <div className="container mx-auto h-auto">
             <div className="flex justify-center">
-              <div className="rounded-lg bg-slate-800 p-8 shadow-lg">
+              <div className="w-[30rem] rounded-lg bg-slate-800 p-8 shadow-lg">
                 <Forum />
               </div>
             </div>

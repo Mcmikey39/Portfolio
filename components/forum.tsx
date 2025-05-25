@@ -27,6 +27,7 @@ export default function Forum() {
             });
             if (response.ok) {
               setAction("email sent successfully");
+              (e.target as HTMLFormElement).reset();
             } else {
               setAction("error sending email");
             }
@@ -82,9 +83,7 @@ export default function Forum() {
         </div>
 
         {action && (
-          <div className="text-small text-default-500">
-            Action: <code>{action}</code>
-          </div>
+          <div className="text-center text-sm text-gray-500">{action}</div>
         )}
       </Form>
     </>

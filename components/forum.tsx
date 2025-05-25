@@ -37,11 +37,11 @@ export default function Forum() {
       >
         <Input
           isRequired
-          errorMessage="Please enter a valid Surename"
-          label="Surename"
+          errorMessage="Please enter a valid First Name"
+          label="First Name"
           labelPlacement="outside"
-          name="Surename"
-          placeholder="Enter your Surename"
+          name="First Name"
+          placeholder="Enter your First Name"
           type="text"
           variant="underlined"
         />

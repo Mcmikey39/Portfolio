@@ -4,7 +4,6 @@ import About from "./about/page";
 import Projects from "./projects/page";
 import Contact from "./contact/page";
 import Link from "next/link";
-import Typewriter from "@/components/typewriter";
 
 export default function Home() {
   return (
@@ -14,7 +13,7 @@ export default function Home() {
         <div className="container mx-auto flex justify-center px-4">
           <div className="flex flex-col justify-center space-y-6 text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-              <Typewriter />
+              <span className="text-indigo-500">Full-Stack</span> Web Developer
             </h1>
             <p className="text-sm md:text-lg lg:text-xl xl:text-2xl">
               Enthusiastic about{" "}

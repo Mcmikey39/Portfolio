@@ -30,7 +30,7 @@ export default function About() {
               alt="Michael"
               width={200}
               height={200}
-              className="h-full w-full object-cover shadow-lg"
+              className="h-full w-full object-cover pb-8 shadow-lg"
             />
           </div>
 
